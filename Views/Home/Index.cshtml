@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    ViewBag.Title = "Welcome";
+    var userName = ViewBag.UserName;
+}
+
+<div class=" flex-grow-1 px-3">
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-sm-4 col-lg-4">
+                <div class="card mb-4 text-white " style="background-color: #499675 ;">
+                    <div class="card-body pb-0 d-flex justify-content-between align-items-start">
+                        <div class="text-center" style="padding-bottom:45px;">
+                            <div class="fs-4 fw-semibold">
+                                @ViewBag.Clinc
+                            </div>
+                            <div>Clincs</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-->
+            <div class="col-sm-4 col-lg-4">
+                <div class="card mb-4 text-white " style="background-color: #95B09F;">
+                    <div class="card-body pb-0 d-flex justify-content-between align-items-start">
+                        <div class="text-center" style="padding-bottom:45px;">
+                            <div class="fs-4 fw-semibold">
+                                @ViewBag.DocCount
+                            </div>
+                            <div>Doctors</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-->
+            <div class="col-sm-4 col-lg-4">
+                <div class="card mb-4 text-white " style="background-color: #E4E0BE ; ">
+                    <div class="card-body pb-0 d-flex justify-content-between align-items-start">
+                        <div class="text-center" style="padding-bottom:45px;">
+                            <div class="fs-4 fw-semibold">
+                                @ViewBag.Users
+                            </div>
+                            <div>Employees </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.col-->
+
+        </div>
+        <!-- /.row-->
+
+        <div class="container mt-5">
+            <div class="jumbotron text-center">
+                <h1 class="display-4">Welcome, @userName!</h1>
+                <p class="lead">We're glad to have you here.</p>
+                <hr class="my-4">
+                <p>This is your dashboard where you can manage your activities.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </div>
+        </div>
+        <!-- /.row-->
+    </div>
+</div>
+
+

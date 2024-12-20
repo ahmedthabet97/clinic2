@@ -1,0 +1,57 @@
+﻿@model dashbord.Models.Doctor;
+<div class="row">
+    <div><h1>Edit Doctor</h1></div>
+    <div class="col-md-8 d-flex justify-content-center">
+        <div class="w-100 justify-content-center">
+            <form asp-controller="Doctor" asp-action="EditDoc" method="post">
+                <div class="form-group">
+                    <label asp-for="@Model.doctorId" class="control-label"></label>
+                    <input asp-for="@Model.doctorId" class="form-control" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" asp-for="fName">First Name </label>
+                    <input type="text" class="form-control" asp-for="fName" required />
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" asp-for="mName">Middle name </label>
+                    <input type="text" class="form-control" asp-for="mName" required />
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" asp-for="lName">Last Name </label>
+                    <input type="text" class="form-control" asp-for="lName" required />
+                    <span class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" asp-for="idNumber">ID Namber </label>
+                    <input type="text" class="form-control" asp-for="idNumber" required />
+                    <span class="text-danger"></span>
+
+                </div>
+                <div class=" form-group">
+                    <label class="control-label" asp-for="phone">Phone </label>
+                    <input type="text" class="form-control" asp-for="phone" required />
+                    <span class="text-danger"></span>
+                </div>
+                <div class=" form-group">
+                    <label class="control-label" asp-for="docSpecialization">Specialization </label>
+                    <input type="text" class="form-control" asp-for="docSpecialization" required />
+                    <span class="text-danger"></span>
+                </div>
+                <br />
+
+                <div class="form-group">
+                    <input type="submit" value="Edit" class="btn btn-info" />
+                    <a asp-controller="Doctor" asp-action="Index" class="btn btn-outline-success">Back to List</a>
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </div>
+</div>
